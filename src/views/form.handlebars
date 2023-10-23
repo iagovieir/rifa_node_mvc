@@ -20,6 +20,25 @@
     <div class="phone">
         <input type="number" name="phone" id="phone" required placeholder="Número Telefone">
     </div>
+    <div class="from">
+        Vendido por:
+        <select name="select">
+            <option value="Leticia">Leticia</option>
+            <option value="Riguad">Victor Riguad</option>
+            <option value="Gilsinho">Gilsinho</option>
+            <option value="Mayara">Mayara</option>
+            <option value="Mariana">Mariana</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Rafael">Rafael</option>
+            <option value="Gustavo">Gustavo</option>
+            <option value="Érica Frazão">Erica Frazão</option>
+            <option value="Gabriela">Gabriela</option>
+            <option value="Bebesso">Bebesson</option>
+            <option value="Lisandra">Lisandra</option>
+            <option value="Magna">Magna</option>
+            <option value="Maria">Maria</option>
+        </select>
+    </div>
 
     <div class="button">
     <button>Reservar Número</button>
@@ -39,6 +58,9 @@
             <th>
                 Contato
             </th>
+            <th>
+                Responsável
+            </th>
         </tr>
         {{#each listar}}
         <tr>
@@ -50,6 +72,9 @@
             </td>
             <td>
                 {{this.Phone}}
+            </td>
+            <td>
+                {{this.From}}
             </td>
         </tr>
         {{else}}

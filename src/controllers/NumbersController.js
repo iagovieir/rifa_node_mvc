@@ -11,7 +11,8 @@ module.exports = {
             new listar({
                 id: radom,
                 Name: req.body.name,
-                Phone: req.body.phone
+                Phone: req.body.phone,
+                From: req.body.select
                 }).save()
         }
        return res.redirect('/number/form')

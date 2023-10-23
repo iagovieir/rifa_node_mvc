@@ -28,6 +28,6 @@ app.get('/', HomeController.home) //renderiza a tela inicial
 app.get('/number/form', NumberController.form); //formulário de reserva de numero
 app.post('/number/reserve', NumberController.reserve);//faz a requição para reservar o número 
 
-app.listen(process.env.PORT || 8080, ()=> {
+app.listen(8080, ()=> {
     console.log('Servidor conectado!');
 })

@@ -13,7 +13,12 @@ const list = new Schema({
     Phone: {
         type: Number,
         required: true
+    },
+    From: {
+        type: String,
+        required: true
     }
+
 })
 
 module.exports = mongoose.model("list", list)
