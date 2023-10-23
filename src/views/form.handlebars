@@ -1,0 +1,59 @@
+<form action="/number/reserve" method="post">
+    <div class="h4">
+        <h4><b>Reserver aqui sua rifa!</b></h4>
+    </div>
+    <div class="div1">
+        
+        Quatidade de Rifas:
+        
+        <div class="qtd">
+            <div id="minus">-</div>
+            <input type="number" id="value" value="1" name="qtd" min="1" max="10">
+            <div id="plus">+</div>
+        </div>
+
+    </div>
+    
+    <div class="namee">
+        <input type="text" name="name" id="name" required maxlength="10" placeholder="Nome">
+    </div>
+    <div class="phone">
+        <input type="number" name="phone" id="phone" required placeholder="Número Telefone">
+    </div>
+
+    <div class="button">
+    <button>Reservar Número</button>
+    </div>
+</form>
+
+<div class="list">
+    <h4>Lista para sorteio</h4>
+    <table border="1" class="table">
+        <tr>
+            <th>
+                Number
+            </th>
+            <th>
+                Nome
+            </th>
+            <th>
+                Contato
+            </th>
+        </tr>
+        {{#each listar}}
+        <tr>
+            <td>
+                {{this.id}}
+            </td>
+            <td>
+                {{this.Name}}
+            </td>
+            <td>
+                {{this.Phone}}
+            </td>
+        </tr>
+        {{else}}
+
+        {{/each}}
+    </table>
+</div>
