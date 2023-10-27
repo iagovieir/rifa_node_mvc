@@ -25,8 +25,9 @@ app.use(express.json());
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', HomeController.home) //renderiza a tela inicial
-app.get('/number/form', NumberController.form); //formulário de reserva de numero
-app.post('/number/reserve', NumberController.reserve);//faz a requição para reservar o número 
+app.get('/number/form', NumberController.form) //formulário de reserva de numero
+app.get('/number/list', NumberController.list) //listar e gerar relaório
+app.post('/number/reserve', NumberController.reserve)//faz a requição para reservar o número 
 
 app.listen(process.env.PORT || 8080, ()=> {
     console.log('Servidor conectado!');

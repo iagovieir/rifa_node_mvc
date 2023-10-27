@@ -1,0 +1,39 @@
+
+<div class="qtd">
+   Quantidade Vendidas: {{countList}}
+</div>
+<div class="button">
+   Gerar Relatório
+</div>
+
+<div class="list">
+    <h4>Lista para sorteio</h4>
+    <table border="1" class="table">
+        <tr>
+            <th>
+                Number
+            </th>
+            <th>
+                Nome
+            </th>
+            <th>
+                Responsável
+            </th>
+        </tr>
+        {{#each listar}}
+        <tr>
+            <td>
+                {{this.id}}
+            </td>
+            <td>
+                {{this.Name}}
+            </td>
+            <td>
+                {{this.From}}
+            </td>
+        </tr>
+        {{else}}
+
+        {{/each}}
+    </table>
+</div>
