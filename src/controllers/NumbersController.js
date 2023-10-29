@@ -38,8 +38,6 @@ module.exports = {
         require('../models/list')
         const listar = mongoose.model('list')
         const lista = await listar.find({}).lean()
-        
-        
 
         res.render('list',{
             title: 'Comprar - EJC',
