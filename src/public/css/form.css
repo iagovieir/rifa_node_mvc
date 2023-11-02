@@ -113,11 +113,13 @@ form .button{
     cursor: pointer;
 }
 #minus{
-    background-color: red;
+    color: #fff;
+    background-color: gray;
     border-radius: 4px;
 }
 #plus{
-    background-color: green;
+    color: #fff;
+    background-color: gray;
     border-radius: 4px;
 }
 #minus:hover{
