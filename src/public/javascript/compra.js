@@ -1,6 +1,6 @@
 
 
-let count = 0;
+let count = 1;
 let Idinteval = 0;
 document.addEventListener("DOMContentLoaded", function() {
     const value = document.querySelector('#value');
