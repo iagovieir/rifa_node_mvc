@@ -28,6 +28,9 @@ app.get('/', HomeController.home) //renderiza a tela inicial
 app.get('/number/form', NumberController.form) //formulário de reserva de numero
 app.get('/number/list', NumberController.list) //listar e gerar relaório
 app.post('/number/reserve', NumberController.reserve)//faz a requição para reservar o número 
+app.get('/number/get/remove', NumberController.rRmove)//form de exclusão
+app.post('/number/remove', NumberController.remove)//romove dados do bd
+app.get('/number/sort', NumberController.sort)//Page para sortear
 
 app.listen(process.env.PORT || 8080, ()=> {
     console.log('Servidor conectado!');
